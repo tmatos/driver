@@ -1,9 +1,9 @@
 #
 #  Configure:
-#  source /opt/yocto/poky/1.3.2/environment-setup-core2-poky-linux
+#  source /opt/yocto/poky/2.2/environment-setup-core2-32-poky-linux
 #
 #  Compile:
-#  KERNELDIR=/opt/yocto/poky-danny-8.0.2/build/tmp/work/cedartrail_nopvr-poky-linux/linux-yocto-3.0.32+git1+bf5ee4945ee6d748e6abe16356f2357f76b5e2f0_1+1e79e03d115ed177882ab53909a4f3555e434833-r4.1/linux-cedartrail-nopvr-standard-build make
+#  KERNELDIR=/opt/yocto/poky-morty-16.0.0/build/tmp/work/genericx86-poky-linux/linux-yocto/4.8.3+gitAUTOINC+83110d94ed_1adf9d3633-r0/linux-genericx86-standard-build make
 #
 #
 
