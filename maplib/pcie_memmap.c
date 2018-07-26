@@ -168,14 +168,22 @@ void get(u32* ptr, u32* dest, int n) {
 
 //
 void executar(u32* ptr) {
+
+  asm volatile ("mfence" ::: "memory");
   
   // Send start signal
   pci_send_command(ptr, 1);
+
+  asm volatile ("mfence" ::: "memory");
   
   // Wait till it's ready
   while(pci_get_status(ptr) != 1);
 
+  asm volatile ("mfence" ::: "memory");
+
   pci_send_command(ptr, 0);  // por Tiago
+
+  asm volatile ("mfence" ::: "memory");
 }
 
 //
