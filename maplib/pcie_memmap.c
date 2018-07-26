@@ -25,7 +25,7 @@
 
 // MEUS OFFSETS (Tiago)
 #define DATA_OFFSET  0
-#define RESULT_OFFSET 0 //////
+#define RESULT_OFFSET 128 //////
 
 typedef unsigned char u8;
 typedef unsigned int u32;
