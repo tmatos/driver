@@ -5,11 +5,13 @@
 #  ou
 #  source /opt/yocto/poky/1.3.2/environment-setup-core2-poky-linux
 #
-#  TODO: fazer para o ARM DS
+#  TODO: fazer para x86-64
+#
+#  TODO: fazer para o ARM
 #
 
 app: conv.c pcie_memmap.c pcie_memmap.h
-	$(CC) -o conv_fpga conv.c pcie_memmap.c -Wall
+	$(CC) -o conv_fpga conv.c pcie_memmap.c -Wall -m32
 	#cp conv_fpga /opt/tftp
 	#cp rodar_fpga.sh /opt/tftp
 	#cp entrada.dat /opt/tftp
