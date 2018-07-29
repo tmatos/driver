@@ -16,12 +16,12 @@
 #define MMAP_SIZE 65536
 
 // ADDRESS MAP (lido da aba 'Address Map' no QSYS)
-#define PCI_OUTPORT 0Xd040 // 4 bytes amplo
-#define PCI_INPORT 0Xd060  // 4 bytes amplo
-#define PCI_MEMORY 0Xc000  // 1024 bytes amplo
-//#define PCI_OUTPORT 0Xc400 // 4 bytes amplo
-//#define PCI_INPORT 0Xc410  // 4 bytes amplo
+//#define PCI_OUTPORT 0Xd040 // 4 bytes amplo
+//#define PCI_INPORT 0Xd060  // 4 bytes amplo
 //#define PCI_MEMORY 0Xc000  // 1024 bytes amplo
+#define PCI_OUTPORT 0Xc400 // 4 bytes amplo
+#define PCI_INPORT 0Xc410  // 4 bytes amplo
+#define PCI_MEMORY 0Xc000  // 1024 bytes amplo
 
 // MEUS OFFSETS (Tiago)
 #define DATA_OFFSET  0
